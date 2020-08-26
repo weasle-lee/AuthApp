@@ -8,10 +8,14 @@ public class AuthApp {
 		String id = "egoing";
 		String inputId = args[0];
 		
+		String pass = "1111";
+		String inputPass = args[1];  
+		
+		
 		System.out.println("Hi");
 		
-		//if(inputId==id) {
-		if(inputId.equals(id)) {
+		//if(inputId==id) { 왜 이코드가 안될까 ??
+		if(inputId.equals(id)&&inputPass.equals(pass)) {
 			System.out.println("Master!");
 		}
 		else {
