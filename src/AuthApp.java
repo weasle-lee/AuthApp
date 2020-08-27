@@ -3,23 +3,25 @@ public class AuthApp {
 
 	public static void main(String[] args) {
 		
-		System.out.println(args[0]);
-		
-		String id = "egoing";
+		String[] users = {"egoing" , "jinhyuk", "youbin"};
 		String inputId = args[0];
 		
-		String pass = "1111";
-		String inputPass = args[1];  
+		boolean isLogined = false;
 		
-		
+		for(int i=0;i<users.length;i++) {
+			String currentId = users[i];
+			if(currentId.equals(inputId)) {
+				isLogined = true;
+				break;
+			}
+		}
 		System.out.println("Hi");
-		
-		//if(inputId==id) { 왜 이코드가 안될까 ??
-		if(inputId.equals(id)&&inputPass.equals(pass)) {
+		if(isLogined) {
 			System.out.println("Master!");
 		}
 		else {
-			System.out.println("Who are you");
+			System.out.println("who are you");
 		}
+		
 	}
-}
+	}
